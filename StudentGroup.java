@@ -1,11 +1,13 @@
+import java.util.ArrayList;
 import java.util.Iterator;
+import java.util.List;
 
 public class StudentGroup implements Iterable<Student> {
 
-    public StringBuilder students = new StringBuilder();
+    public List<Student> students = new ArrayList<>();
 
     public void addStudent(Student student) {
-        students.append(student).append(" ");
+        students.add(student);
     }
 
     @Override
